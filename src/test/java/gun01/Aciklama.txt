@@ -1,0 +1,33 @@
+
+TDD : Test Driven Development
+      Testler hazırlanır, sonra sistemi bu testlere göre test ederiz
+
+
+BDD : Behaviour Driven Development
+      Text metin iile yapılacak test stepleri belirlenir.
+      Bu Gherkin dilinde yazılır
+      filename.feature dosyalara yazılır
+
+      Gherkin -> Text metin
+      Feature
+      Scenario:
+      Scenario Outline:
+      BackGround:
+
+      Given -> Test başlama noktası
+      When  -> Test yapılır
+      Then  -> Beklenen sonuç
+      And   -> Ekleme
+      But   -> Negatif
+
+
+      Scenario: ikinci senario
+          Given user clicks to login button
+          And and given
+          And and givem
+          When User on home page
+          And and condition
+          And and condition
+          And and condition
+          Then  user clicks to login button
+          And and then
