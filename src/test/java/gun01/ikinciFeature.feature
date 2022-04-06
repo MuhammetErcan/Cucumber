@@ -10,7 +10,7 @@ Feature: 2 feature
   Scenario: 2. Scenario
     Given the initial value is 5
     When user add 2 the value
-    Then  the result should be 10
+    Then  the result should be 7
       
   Scenario: 3. Scenario
     Given the initial value is 10
