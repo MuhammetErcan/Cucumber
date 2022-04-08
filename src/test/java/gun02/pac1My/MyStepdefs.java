@@ -27,13 +27,11 @@ public class MyStepdefs {
     @Given("go to edit acconut")
     public void goToEditAcconut() {
         locatorsAndMethods1.goToEditAccount();
-
     }
 
     @When("chane telephone number with {string}")
     public void chaneTelephoneNumberWith(String text) {
         locatorsAndMethods1.chaneTelephoneNumberWith(text);
-
     }
 
     @Then("assert change")

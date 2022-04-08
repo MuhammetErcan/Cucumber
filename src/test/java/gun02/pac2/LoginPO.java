@@ -1,4 +1,5 @@
 package gun02.pac2;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,9 +46,24 @@ public class LoginPO {
     @FindBy(css = "div.alert.alert-success")
     public WebElement successAlert;
 
-    @FindBy(css = "input[name='newsletter'][value='0']")
+    @FindBy(css = "input[name='newsletter'][value='1']")
     public WebElement newsletterYes;
 
-    @FindBy(css = "div.alert.alert-success")
+    @FindBy(css = "input[name='newsletter'][value='0']")
     public WebElement newsletterNo;
+
+    @FindBy(css = "div.alert.alert-success")
+    public WebElement eAlertAccept;
+
+    @FindBy(css = "div.alert.alert-danger")
+    public WebElement eAlertDanger;
+
+    @FindBy(xpath = "//aside[@id='column-right']//a[text()='Logout']")
+    public WebElement eLogoutSide;
+
+
+    public void filltheForm(String username, String password){
+        usernameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
+    }
 }
